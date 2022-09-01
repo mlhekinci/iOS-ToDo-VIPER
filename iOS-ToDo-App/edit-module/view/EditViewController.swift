@@ -27,5 +27,6 @@ class EditViewController: UIViewController {
         if let input = updateInput.text, let m_task = task {
             editPresenterObject?.update(task_id: m_task.task_id!, task_title: input)
         }
+        self.navigationController?.popToRootViewController(animated: true)
     }
 }

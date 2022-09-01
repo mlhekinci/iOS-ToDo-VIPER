@@ -21,6 +21,7 @@ class SaveViewController: UIViewController {
     @IBAction func todoSaveButton(_ sender: Any) {
         if let input = todoInput.text {
             savePresenterObject?.addTodo(task_title: input)
+            self.navigationController?.popToRootViewController(animated: true)
         }
     }
 }

@@ -143,7 +143,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="UPDATE"/>
                                 <connections>
-                                    <action selector="updateTodoButton:" destination="OSM-x4-S0U" eventType="touchUpInside" id="OaC-yE-68h"/>
+                                    <action selector="updateTodoButton:" destination="VMs-Zh-ENU" eventType="touchUpInside" id="gxi-2X-qup"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -163,7 +163,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Xg-Na-4oJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="OSM-x4-S0U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-368" y="305"/>
         </scene>

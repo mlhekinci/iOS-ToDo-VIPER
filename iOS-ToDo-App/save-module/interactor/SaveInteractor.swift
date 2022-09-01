@@ -8,7 +8,24 @@
 import Foundation
 
 class SaveInteractor: PresenterToInteractorSaveProtocol {
+    
+    let DB: FMDatabase?
+    
+    init() {
+        let targetPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let copyPath = URL(fileURLWithPath: targetPath).appendingPathComponent("task.sqlite")
+        
+        DB = FMDatabase(path: copyPath.path)
+    }
+    
     func addNewTodo(task_title: String) {
-        print("New todo: \(task_title)")
+        DB?.open()
+        
+        do {
+            try DB?.executeUpdate("INSERT INTO todos (task_title) VALUES (?)", values: [task_title])
+        } catch {
+            print(error.localizedDescription)
+        }
+        DB?.close()
     }
 }
