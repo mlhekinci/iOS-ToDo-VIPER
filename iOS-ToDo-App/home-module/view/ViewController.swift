@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var taskTableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var homePresenterObject: ViewToPresenterHomeProtocol?
     var taskList = [Task]()
@@ -18,6 +19,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         taskTableView.delegate = self
         taskTableView.dataSource = self
+        searchBar.delegate = self
+        
         HomeRouter.createModule(ref: self)
         
         copyDB()
@@ -65,6 +68,12 @@ extension ViewController: PresenterToViewHomeProtocol {
     }
 }
 
+extension ViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        homePresenterObject?.searh(q: searchText)
+    }
+}
+
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return taskList.count
@@ -85,6 +94,28 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let task = taskList[indexPath.row]
         performSegue(withIdentifier: "toEditPage", sender: task)
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let task = self.taskList[indexPath.row]
+        
+        let alert = UIContextualAction(style: .destructive, title: "Delete") {
+            (action, view, bool) in
+            
+            let config = UIAlertController(title: "Delete", message: "Are you sure that the task named \(task.task_title!)", preferredStyle: .alert)
+            
+            let cancel = UIAlertAction(title: "Cancel", style: .cancel)
+            let delete = UIAlertAction(title: "DELETE", style: .destructive) { action in
+                self.homePresenterObject?.delete(task_id: task.task_id!)
+            }
+            config.addAction(cancel)
+            config.addAction(delete)
+            
+            self.present(config, animated: true)
+        }
+        
+        return UISwipeActionsConfiguration(actions: [alert])
     }
 }
 

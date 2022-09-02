@@ -70,6 +70,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="UA5-dg-XMC" id="mFM-VZ-Vfo"/>
                         <outlet property="taskTableView" destination="eJn-hB-ZCY" id="0UX-Ap-Lvp"/>
                         <segue destination="VMs-Zh-ENU" kind="show" identifier="toEditPage" id="NaU-8d-CTO"/>
                     </connections>

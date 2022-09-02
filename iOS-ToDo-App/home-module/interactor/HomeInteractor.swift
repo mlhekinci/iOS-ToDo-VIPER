@@ -43,10 +43,40 @@ class HomeInteractor: PresenterToInteractorHomeProtocol {
     }
     
     func searchTask(q: String) {
-        print("Search Task: \(q)")
+       var list = [Task]()
+        
+        DB?.open()
+        
+        do {
+            let query = try DB!.executeQuery("SELECT * FROM todos WHERE task_title like '%\(q)%'", values: nil)
+            
+            while query.next() {
+                
+                let task = Task(task_id: Int(query.string(forColumn: "task_id"))!, task_title: query.string(forColumn: "task_title")!)
+                
+                list.append(task)
+            }
+            
+            homePresenter?.dataToPresenter(taskList: list)
+            
+        }catch {
+            print(error.localizedDescription)
+        }
+        
+        DB?.close()
     }
     
     func deleteTask(task_id: Int) {
-        print("Deleted \(task_id) item")
+        DB?.open()
+        
+        do {
+            try DB!.executeUpdate("DELETE FROM todos WHERE task_id = ?", values: [task_id])
+            
+            getAllTask()
+        }catch {
+            print(error.localizedDescription)
+        }
+        
+        DB?.close()
     }
 }
