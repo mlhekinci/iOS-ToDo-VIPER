@@ -16,12 +16,12 @@
 		D45F5E3728C0DF6500FA421A /* EditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F5E3628C0DF6500FA421A /* EditPresenter.swift */; };
 		D45F5E3A28C0DFDD00FA421A /* EditRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F5E3928C0DFDD00FA421A /* EditRouter.swift */; };
 		D45F5E3D28C0E8B100FA421A /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F5E3C28C0E8B100FA421A /* TaskTableViewCell.swift */; };
-		D45F5E7428C0F06100FA421A /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F5E6A28C0F06100FA421A /* FMDatabase.m */; };
-		D45F5E7528C0F06100FA421A /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F5E6D28C0F06100FA421A /* FMResultSet.m */; };
-		D45F5E7628C0F06100FA421A /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F5E6F28C0F06100FA421A /* FMDatabasePool.m */; };
-		D45F5E7728C0F06100FA421A /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F5E7028C0F06100FA421A /* FMDatabaseQueue.m */; };
-		D45F5E7828C0F06100FA421A /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F5E7128C0F06100FA421A /* FMDatabaseAdditions.m */; };
-		D45F5E9B28C10DF800FA421A /* task.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D45F5E9A28C10DF800FA421A /* task.sqlite */; };
+		D4E744D428C63AB600E0EF24 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E744C928C63AB600E0EF24 /* FMDatabasePool.m */; };
+		D4E744D528C63AB600E0EF24 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E744CD28C63AB600E0EF24 /* FMDatabaseAdditions.m */; };
+		D4E744D628C63AB600E0EF24 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E744D028C63AB600E0EF24 /* FMResultSet.m */; };
+		D4E744D728C63AB600E0EF24 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E744D228C63AB600E0EF24 /* FMDatabase.m */; };
+		D4E744D828C63AB600E0EF24 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E744D328C63AB600E0EF24 /* FMDatabaseQueue.m */; };
+		D4E744DB28C63AC100E0EF24 /* task.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D4E744DA28C63AC100E0EF24 /* task.sqlite */; };
 		D4FB585428BE4D82009FCC40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FB585328BE4D82009FCC40 /* AppDelegate.swift */; };
 		D4FB585628BE4D82009FCC40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FB585528BE4D82009FCC40 /* SceneDelegate.swift */; };
 		D4FB585828BE4D82009FCC40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FB585728BE4D82009FCC40 /* ViewController.swift */; };
@@ -49,18 +49,18 @@
 		D45F5E3C28C0E8B100FA421A /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		D45F5E6728C0F02200FA421A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		D45F5E6828C0F06100FA421A /* iOS-ToDo-App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-ToDo-App-Bridging-Header.h"; sourceTree = "<group>"; };
-		D45F5E6928C0F06100FA421A /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = "../../../../Downloads/FMDB Dosyaları/FMResultSet.h"; sourceTree = "<group>"; };
-		D45F5E6A28C0F06100FA421A /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = "../../../../Downloads/FMDB Dosyaları/FMDatabase.m"; sourceTree = "<group>"; };
-		D45F5E6B28C0F06100FA421A /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = "../../../../Downloads/FMDB Dosyaları/FMDatabaseQueue.h"; sourceTree = "<group>"; };
-		D45F5E6C28C0F06100FA421A /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = "../../../../Downloads/FMDB Dosyaları/FMDatabasePool.h"; sourceTree = "<group>"; };
-		D45F5E6D28C0F06100FA421A /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = "../../../../Downloads/FMDB Dosyaları/FMResultSet.m"; sourceTree = "<group>"; };
-		D45F5E6E28C0F06100FA421A /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = "../../../../Downloads/FMDB Dosyaları/FMDatabase.h"; sourceTree = "<group>"; };
-		D45F5E6F28C0F06100FA421A /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = "../../../../Downloads/FMDB Dosyaları/FMDatabasePool.m"; sourceTree = "<group>"; };
-		D45F5E7028C0F06100FA421A /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = "../../../../Downloads/FMDB Dosyaları/FMDatabaseQueue.m"; sourceTree = "<group>"; };
-		D45F5E7128C0F06100FA421A /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = "../../../../Downloads/FMDB Dosyaları/FMDatabaseAdditions.m"; sourceTree = "<group>"; };
-		D45F5E7228C0F06100FA421A /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = "../../../../Downloads/FMDB Dosyaları/FMDatabaseAdditions.h"; sourceTree = "<group>"; };
-		D45F5E7328C0F06100FA421A /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = "../../../../Downloads/FMDB Dosyaları/FMDB.h"; sourceTree = "<group>"; };
-		D45F5E9A28C10DF800FA421A /* task.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = task.sqlite; path = ../../../task.sqlite; sourceTree = "<group>"; };
+		D4E744C928C63AB600E0EF24 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		D4E744CA28C63AB600E0EF24 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		D4E744CB28C63AB600E0EF24 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		D4E744CC28C63AB600E0EF24 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		D4E744CD28C63AB600E0EF24 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		D4E744CE28C63AB600E0EF24 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		D4E744CF28C63AB600E0EF24 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		D4E744D028C63AB600E0EF24 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		D4E744D128C63AB600E0EF24 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		D4E744D228C63AB600E0EF24 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		D4E744D328C63AB600E0EF24 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		D4E744DA28C63AC100E0EF24 /* task.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = task.sqlite; sourceTree = "<group>"; };
 		D4FB585028BE4D82009FCC40 /* iOS-ToDo-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-ToDo-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4FB585328BE4D82009FCC40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4FB585528BE4D82009FCC40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,18 +127,18 @@
 				D4FB585C28BE4D82009FCC40 /* Assets.xcassets */,
 				D4FB585E28BE4D82009FCC40 /* LaunchScreen.storyboard */,
 				D4FB586128BE4D82009FCC40 /* Info.plist */,
-				D45F5E9A28C10DF800FA421A /* task.sqlite */,
-				D45F5E6E28C0F06100FA421A /* FMDatabase.h */,
-				D45F5E6A28C0F06100FA421A /* FMDatabase.m */,
-				D45F5E7228C0F06100FA421A /* FMDatabaseAdditions.h */,
-				D45F5E7128C0F06100FA421A /* FMDatabaseAdditions.m */,
-				D45F5E6C28C0F06100FA421A /* FMDatabasePool.h */,
-				D45F5E6F28C0F06100FA421A /* FMDatabasePool.m */,
-				D45F5E6B28C0F06100FA421A /* FMDatabaseQueue.h */,
-				D45F5E7028C0F06100FA421A /* FMDatabaseQueue.m */,
-				D45F5E7328C0F06100FA421A /* FMDB.h */,
-				D45F5E6928C0F06100FA421A /* FMResultSet.h */,
-				D45F5E6D28C0F06100FA421A /* FMResultSet.m */,
+				D4E744DA28C63AC100E0EF24 /* task.sqlite */,
+				D4E744D128C63AB600E0EF24 /* FMDatabase.h */,
+				D4E744D228C63AB600E0EF24 /* FMDatabase.m */,
+				D4E744CC28C63AB600E0EF24 /* FMDatabaseAdditions.h */,
+				D4E744CD28C63AB600E0EF24 /* FMDatabaseAdditions.m */,
+				D4E744CB28C63AB600E0EF24 /* FMDatabasePool.h */,
+				D4E744C928C63AB600E0EF24 /* FMDatabasePool.m */,
+				D4E744CA28C63AB600E0EF24 /* FMDatabaseQueue.h */,
+				D4E744D328C63AB600E0EF24 /* FMDatabaseQueue.m */,
+				D4E744CE28C63AB600E0EF24 /* FMDB.h */,
+				D4E744CF28C63AB600E0EF24 /* FMResultSet.h */,
+				D4E744D028C63AB600E0EF24 /* FMResultSet.m */,
 				D45F5E6828C0F06100FA421A /* iOS-ToDo-App-Bridging-Header.h */,
 			);
 			path = "iOS-ToDo-App";
@@ -377,7 +377,7 @@
 			files = (
 				D4FB586028BE4D82009FCC40 /* LaunchScreen.storyboard in Resources */,
 				D4FB585D28BE4D82009FCC40 /* Assets.xcassets in Resources */,
-				D45F5E9B28C10DF800FA421A /* task.sqlite in Resources */,
+				D4E744DB28C63AC100E0EF24 /* task.sqlite in Resources */,
 				D4FB585B28BE4D82009FCC40 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,27 +392,27 @@
 				D45F5E3428C0DF4400FA421A /* EditInteractor.swift in Sources */,
 				D4FB589528BEBCD0009FCC40 /* EditViewController.swift in Sources */,
 				D45F5E2828C0DB5000FA421A /* SaveInteractor.swift in Sources */,
-				D45F5E7428C0F06100FA421A /* FMDatabase.m in Sources */,
 				D4FB588A28BE5629009FCC40 /* HomePresenter.swift in Sources */,
-				D45F5E7628C0F06100FA421A /* FMDatabasePool.m in Sources */,
 				D4FB587E28BE515E009FCC40 /* HomeProtocol.swift in Sources */,
+				D4E744D528C63AB600E0EF24 /* FMDatabaseAdditions.m in Sources */,
 				D4FB585828BE4D82009FCC40 /* ViewController.swift in Sources */,
 				D45F5E2528C0DA0D00FA421A /* SaveProtocol.swift in Sources */,
+				D4E744D728C63AB600E0EF24 /* FMDatabase.m in Sources */,
+				D4E744D628C63AB600E0EF24 /* FMResultSet.m in Sources */,
 				D45F5E2B28C0DB8300FA421A /* SavePresenter.swift in Sources */,
-				D45F5E7528C0F06100FA421A /* FMResultSet.m in Sources */,
 				D45F5E2E28C0DBB700FA421A /* SaveRouter.swift in Sources */,
-				D45F5E7728C0F06100FA421A /* FMDatabaseQueue.m in Sources */,
 				D4FB588328BE537F009FCC40 /* Task.swift in Sources */,
 				D4FB589128BEBB28009FCC40 /* SaveViewController.swift in Sources */,
 				D45F5E3D28C0E8B100FA421A /* TaskTableViewCell.swift in Sources */,
 				D4FB588728BE55C2009FCC40 /* HomeInteractor.swift in Sources */,
 				D45F5E3128C0DE6700FA421A /* EditProtocol.swift in Sources */,
+				D4E744D828C63AB600E0EF24 /* FMDatabaseQueue.m in Sources */,
 				D4FB588D28BE56C7009FCC40 /* HomeRouter.swift in Sources */,
 				D4FB585428BE4D82009FCC40 /* AppDelegate.swift in Sources */,
 				D45F5E3728C0DF6500FA421A /* EditPresenter.swift in Sources */,
+				D4E744D428C63AB600E0EF24 /* FMDatabasePool.m in Sources */,
 				D45F5E3A28C0DFDD00FA421A /* EditRouter.swift in Sources */,
 				D4FB585628BE4D82009FCC40 /* SceneDelegate.swift in Sources */,
-				D45F5E7828C0F06100FA421A /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
